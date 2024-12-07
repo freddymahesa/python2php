@@ -1,4 +1,7 @@
 import os
+# Create by Freddy Wicaksono, M.Kom
+# Date : 07-12-2024
+
 # Define the template for the PHP view
 php_template = """<?php
 include("../controllers/{controller_name}.php");

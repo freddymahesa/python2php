@@ -1,4 +1,7 @@
 import os
+# Create by Freddy Wicaksono, M.Kom
+# Date : 07-12-2024
+
 # Define the template for the PHP view
 php_template = """<?php
 include("../controllers/{controller_name}.php");
@@ -98,7 +101,8 @@ for field, details in fields.items():
 php_script = php_template.replace("{entity_name}", entity_name) \
                          .replace("{controller_name}", controller_name) \
                          .replace("{form_processing}", form_processing) \
-                         .replace("{form_fields}", form_fields)
+                         .replace("{form_fields}", form_fields) \
+                         .replace("{table_name}", table_name)
 
 folder_name = entity_name.lower()
 os.makedirs(folder_name, exist_ok=True)

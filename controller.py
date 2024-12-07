@@ -1,4 +1,7 @@
 import os
+# Create by Freddy Wicaksono, M.Kom
+# Date : 07-12-2024
+
 # Define the template for the PHP controller
 php_template = """<?php
 include_once('../models/{model_name}Model.php');

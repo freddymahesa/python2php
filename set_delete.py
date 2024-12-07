@@ -1,4 +1,7 @@
 import os
+# Create by Freddy Wicaksono, M.Kom
+# Date : 07-12-2024
+
 # Define the template for the PHP delete view
 php_template = """<?php
 include("../controllers/{controller_name}.php");
@@ -93,7 +96,8 @@ for field, details in fields.items():
 php_script = php_template.replace("{entity_name}", entity_name) \
                          .replace("{controller_name}", controller_name) \
                          .replace("{table_name}", table_name) \
-                         .replace("{display_fields}", display_fields)
+                         .replace("{display_fields}", display_fields) 
+                         
 
 folder_name = entity_name.lower()
 os.makedirs(folder_name, exist_ok=True)
